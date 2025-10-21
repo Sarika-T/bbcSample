@@ -1,70 +1,156 @@
-# Getting Started with Create React App
+# 📺 BBC iPlayer Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **BBC iPlayer-inspired web app** built using **React.js** and **Material UI**, designed to replicate the visual layout and navigation experience of the official BBC iPlayer website.  
+This project focuses on **UI design and component structure**, with dynamic navigation links and responsive layout — built purely for **educational and portfolio purposes**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
+🔗 [Live Preview](https://sarika-t.github.io/bbcSample/)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧩 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✅ **BBC-inspired UI** — same layout, typography, and design consistency  
+✅ **Fully responsive design** — optimized for desktop, tablet, and mobile  
+✅ **Dynamic navigation links** — pages like *Home, News, Sport, Business, Innovation, Culture, Travel* added dynamically  
+✅ **Explore Section** — secondary navigation includes *Earth, Video, Live*, etc.  
+✅ **Footer with external links** — includes Terms, Privacy, Accessibility, Contact, etc.  
+✅ **React Router Integration** — navigation handled via `react-router-dom`  
+✅ **Material UI Components** — used for consistent and modern styling  
+✅ **SASS support** — for scalable, modular CSS styling  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Not Implemented / Under Development
 
-### `npm run build`
+⚠️ **Sign In**, **Filter**, and **Search** functionalities are not available due to **BBC iPlayer region restrictions**:  
+> “Sorry, BBC iPlayer isn’t available in your region.”
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is built for **UI demonstration** only and does not include playback or API integration.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏗️ Tech Stack
 
-### `npm run eject`
+| Category | Technology |
+|-----------|-------------|
+| **Frontend** | React.js (v19) |
+| **Routing** | React Router DOM (v7.8.2) |
+| **UI Library** | Material UI (MUI v7) |
+| **Styling** | SCSS (Sass Loader v16) |
+| **Deployment** | GitHub Pages |
+| **Testing** | React Testing Library |
+| **Package Management** | npm |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Folder Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+├── public/
+│ ├── index.html
+│ └── favicon.ico
+├── src/
+│ ├── assests/
+│ │ ├── icon.js
+│ ├── components/
+│ │ ├── Common/
+| | |  ├── Common.scss
+│ │ |  ├── LinksBBC.jsx
+│ │ |  ├── SearchBar.jsx
+│ │ ├── Content/
+| | |  ├── FotterLinks.jsx
+│ │ |  ├── FooterLinks.scss
+│ │ ├── Header/
+| | |  ├── Header.jsx
+│ │ |  ├── Header.scss
+│ │ └── Maninpage/
+| |    ├── Mainpage.jsx
+│ │    ├── Mainpage.scss
+│ ├── App.jsx
+│ ├── index.jsx
+│ └── logo.svg
+| └── App.css
+| └── App.test.jsx
+| └── index.css
+| └── reportWebVitals.jsx
+| └── setupTests.jsx
+├──.gitignore
+└── README.md
+├── package-lock.json
+└── package.json
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ⚡ Installation & Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# Clone the repository
+git clone https://github.com/Sarika-T/bbcSample.git
 
-### Analyzing the Bundle Size
+# Navigate to the project folder
+cd my-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Install dependencies
+npm install
 
-### Making a Progressive Web App
+# Run the development server
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Deployment (GitHub Pages Setup)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is preconfigured for deployment using GitHub Pages.
 
-### Deployment
+1.Add the homepage field in package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Make sure your package.json includes the following line (replace yourusername):
+"homepage": "https://sarika-t.github.io/bbcSample/"
 
-### `npm run build` fails to minify
+2.Deploy to GitHub Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run the following commands:
+
+npm run predeploy
+npm run deploy
+
+
+predeploy will build the optimized production version.
+
+deploy will push the build folder to the gh-pages branch.
+
+BBCPlayer app will be live at:
+👉 https://sarika-t.github.io/bbcSample/
+
+---
+
+## 🚧 Future Enhancements
+
+These are the planned updates to improve the project in future releases:
+
+- 🔐 Add **Sign In / Authentication** functionality  
+- 🔎 Implement **Search and Filter** for content browsing  
+- 🧠 Integrate **AI-based recommendations** (e.g., trending shows, personalized news)  
+- 🖼️ Add **image assets and category thumbnails** dynamically  
+- 📱 Improve **mobile-first layout , Responsiveness** and animations  
+
+---
+
+## 📜 Disclaimer
+
+This project is **not affiliated with or endorsed by BBC**.  
+It is a **frontend UI clone** built for **educational and portfolio purposes only**.  
+All rights to logos, brand, and content belong to **BBC**.
+
+---
+
+## 👨‍💻 Author
+
+**T Sarika**  
+Frontend Developer | React.js | UI/UX Enthusiast  
+📫 [talarisarika22@gmail.com](mailto:talarisarika22@gmail.com)  
+🌐 [LinkedIn](https://linkedin.com/in/sarika-talari-7a1b91217) | [GitHub](https://github.com/Sarika-T/)
