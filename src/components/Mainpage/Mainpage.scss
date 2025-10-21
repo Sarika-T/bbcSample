@@ -1,0 +1,108 @@
+.mainpage{
+    width: 100%;
+    height: 100%;
+    color: white;
+    &-header{
+        width: 100%;
+        height: 60px;
+        box-shadow: rgba(255, 255, 255, .15) 0 .0625rem 0;
+        background: #000;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+        &-left{
+            align-items: center;
+            justify-content: start;
+            display: flex;
+            gap:30px;
+            height:60px;
+            margin-left: 20px;
+            &-profile{
+                align-items: center;
+                display: flex;
+                gap:2px;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 5px;
+                transition: border-color 0.3s;
+            }
+            &-profile:hover{
+                border-bottom: 2px solid #0e1cb5ff;
+            }
+            &-line{
+                border-right: 1px solid white;
+            }
+            &-image{
+                width: 78%;
+                &-text{
+                    font-weight: 600;
+                    width: 180px;
+                    align-items: start;
+                    display: flex;
+                    justify-content: start;
+                    position: relative;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &-content{
+        position: relative;
+        top: -22px;
+        z-index: 1;
+        &-image{
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://ichef.bbci.co.uk/images/ic/1184x666/p0k0w8r9.jpg");
+            height: 80vh;
+            background-size: cover;
+            transition: opacity 0.5s ease;
+            mask-image: linear-gradient(to right,
+                rgba(0, 0, 0, 1) 0px,
+                rgba(0, 0, 0, 1) 10px,
+                rgba(0, 0, 0, 0.99) 30px,
+                rgba(0, 0, 0, 1) calc(100% - 10px),
+                rgba(0, 0, 0, 1) 100%),
+            linear-gradient(to bottom,
+                black 0px,
+                black 10px,
+                rgba(0, 0, 0, 1) 30px,
+                rgba(0, 0, 0, 1) calc(100% - 30px),
+                black calc(100% - 10px),
+                black 100%);
+                        
+            background-color: black;
+            width: 100%;
+            &-text{
+                width: 35%;
+                height: 100%;
+                align-items: start;
+                text-align: start;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-left: 20px;
+                &-help{
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin-top: 15px;
+                }
+            }
+        }
+        &-image::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1%;
+        height: 100%;
+        background-color: black;
+        z-index: 1;
+        }
+        &-explore{
+            color: #000000;
+            align-items: start;
+            text-align: start;
+            margin-left: 15px;
+        }
+    }
+}
